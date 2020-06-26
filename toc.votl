@@ -1,0 +1,175 @@
+(3) Foreward
+(4) Preface
+(5) Table of Contents
+(9) List of Figures
+(11) 1. Abstract
+	(11) 1.1. General
+(12) 2. Concepts and Terminology
+	(12) 2.1. Basic Concepts
+	(12) 2.2. AX.25 Model
+	(13) 2.3. Data-Link Service Access Point
+	(14) 2.4. Segmenter
+	(14) 2.5. Data Link
+	(15) 2.6. Management Data Link
+	(15) 2.7. Link Multiplexer
+	(15) 2.8. Physical
+	(15) 2.9. System Description Language
+(16) 3. Frame Structure
+	(16) 3.1. Flag Field
+	(17) 3.2. Address Field
+	(17) 3.3. Control Field
+	(17) 3.4. PID Field
+	(18) 3.5. Information Field
+	(18) 3.6. Bit Stuffing
+	(18) 3.7. Frame-Check Sequence
+	(18) 3.8. Order of Bit Transmission
+	(18) 3.9. Invalid Frames
+	(19) 3.10. Frame Abort
+	(19) 3.11. Inter-Frame Time Fill
+	(19) 3.12. Address-Field Encoding
+		(19) 3.12.1. Non-repeater Address-Field Encoding
+		(21) 3.12.2. Destination Subfield Encoding
+		(22) 3.12.3. Source Subfield Encoding
+		(23) 3.12.4. Layer 2 Repeater Address Encoding
+		(25) 3.12.5. Multiple Repeater Operation
+(26) 4. Elements of Procedure and Formats of Fields
+	(26) 4.1. General
+	(26) 4.2. Control Fields
+		(26) 4.2.1. Control-Field Formats
+			(27) 4.2.1.1. Information-Transfer Format
+			(27) 4.2.1.2. Supervisory Format
+			(27) 4.2.1.3. Unnumbered Format
+		(28) 4.2.2. Control-Field Parameters
+		(28) 4.2.3. Sequence Numbers
+		(28) 4.2.4. Frame Variables and Sequence Numbers
+			(28) 4.2.4.1. Send State Variable V(S)
+			(28) 4.2.4.2. Send Sequence Number N(S)
+			(28) 4.2.4.3. Receive State Variable V(R)
+			(28) 4.2.4.4. Received Sequence Number N(R)
+			(28) 4.2.4.5. Acknowledge State Variable V(A)
+	(29) 4.3. Control-Field Coding for Commands and Responses
+		(29) 4.3.1. Information Command Frame Control Field
+		(30) 4.3.2. Supervisory Frame Control Field
+			(31) 4.3.2.1. Receive Ready (RR) Command and Response
+			(31) 4.3.2.2. Receive Not Ready (RNR) Command and Response
+			(31) 4.3.2.3. Reject (REJ) Command and Response
+			(31) 4.3.2.4. Selective Reject (SREJ) Command and Response
+		(32) 4.3.3. Unnumbered Frame Control Fields
+			(33) 4.3.3.1. Set Asynchronous Balanced Mode (SABM) Command
+			(33) 4.3.3.2. Set Asynchronous Balanced Mode Extended (SABME) Command
+			(33) 4.3.3.3. Disconnect (DISC) Command
+			(33) 4.3.3.4. Unnumbered Acknowledge (UA) Response
+			(33) 4.3.3.5. Disconnected Mode (DM) Response
+			(34) 4.3.3.6. Unnumbered Information (UI) Frame
+			(34) 4.3.3.7. Exchange Identification (XID) Frame
+			(38) 4.3.3.8. Test (TEST) Frame
+			(38) 4.3.3.9. FRMR Response Frame
+	(38) 4.4. Link Error Reporting and Recovery
+		(38) 4.4.1. TNC Busy Condition
+		(39) 4.4.2. Send Sequence Number Error
+		(39) 4.4.3. Reject (REJ) Recovery
+		(39) 4.4.4. Selective Reject (SREJ) Recovery
+		(40) 4.4.5. Timeout Error Recovery
+			(40) 4.4.5.1. T1 Timer Recovery
+			(40) 4.4.5.2. Timer T3 Recovery
+		(40) 4.4.6. Invalid Frame or FCS Error
+(41) 5. Elements for Layer-to-Layer Communication
+	(41) 5.1. Layer 3 Entity <—> Management Data-link State Machine
+	(41) 5.2. Management Data-Link State Machine <-> Link Multiplexer State Machine
+	(42) 5.3. Layer 3 Entity <—> Data-Link State Machine
+	(43) 5.4. Data-Link State Machine <—> Link Multiplexer State Machine
+	(44) 5.5. Link Multiplexer State Machine <—> Physical State Machine
+	(44) 5.6. Physical State Machine <—> Hardware
+(45) 6. Description of AX.25 Procedures
+	(45) 6.1. Address Field Operation
+		(45) 6.1.1. Address Information
+		(45) 6.1.2. Command/Response Procedure
+	(46) 6.2. Poll/Final (P/F) Bit Procedures
+	(46) 6.3. Procedures For Link Set-Up and Disconnection
+		(46) 6.3.1. AX.25 Link Connection Establishment
+		(47) 6.3.2. Parameter Negotiation Phase
+		(48) 6.3.3. Information-Transfer Phase
+		(48) 6.3.4. Link Disconnection
+		(48) 6.3.5. Disconnected State
+		(49) 6.3.6. Collision Recovery
+			(49) 6.3.6.1. Collisions in a Half-Duplex Environment
+			(49) 6.3.6.2. Collisions of Unnumbered Commands
+			(49) 6.3.6.3. Collision of a DM with a SABM(E) or DISC
+		(49) 6.3.7. Connectionless Operation
+	(59) 6.4. Procedures for Information Transfer
+		(59) 6.4.1. Sending I Frames
+		(59) 6.4.2. Receiving I Frames
+			(59) 6.4.2.1. Not Busy
+			(59) 6.4.2.2. Busy
+		(59) 6.4.3. Priority Acknowledge
+		(51) 6.4.4. Reception of Out-of-Sequence Frames
+			(51) 6.4.4.1. Implicit Reject (REJ)
+			(51) 6.4.4.2. Selective Reject (SREJ)
+			(51) 6.4.4.3. Selective Reject-Reject (SREJ/REJ)
+		(51) 6.4.5. Reception of Incorrect Frames
+		(51) 6.4.6. Receiving Acknowledgement
+		(52) 6.4.7. Receiving REJ
+		(52) 6.4.8. Receiving an SREJ
+		(52) 6.4.9. Receiving an RNR Frame
+		(52) 6.4.10. Sending a Busy Indication
+		(53) 6.4.11. Waiting Acknowledgement
+(53) 6.5. Resetting Procedure
+(54) 6.6. Disassembler/Reassembler
+(54) 6.7. List of System Defined Parameters
+	(54) 6.7.1. Timers
+		(54) 6.7.1.1. Acknowledgment Timer T1
+		(55) 6.7.1.2. Response Delay Timer T2
+		(55) 6.7.1.3. Inactive Link Timer T3
+		(55) 6.7.1.4. Repeater Hang Timer T100 (AXHANG)
+		(55) 6.7.1.5. Priority Window Timer T101 (PRIACK)
+		(55) 6.7.1.6. Slot Time Timer T102 (p-persistence)
+		(55) 6.7.1.7. Transmitter Startup Timer T103 (TXDELAY)
+		(55) 6.7.1.8. Repeater Startup Timer T104 (AXDELAY)
+		(55) 6.7.1.9. Remote Receiver Sync Timer T105
+		(55) 6.7.1.10. Ten Minute Transmission Limit Timer T106
+		(56) 6.7.1.11. Anti-Hogging Limit Timer T107
+		(56) 6.7.1.12. Receiver Startup Timer T108
+		(56) 6.7.1.13. Next Segment Timer TR210
+	(56) 6.7.2. Parameters
+		(56) 6.7.2.1. Maximum Number of Octets in an I Field (N1)
+		(56) 6.7.2.2. Maximum Number of Retries (N2)
+		(56) 6.7.2.3. Maximum Number of I Frames Outstanding (k)
+(57) Appendix A: Glossary
+(58) Appendix B: References
+(59) Appendix C1: Introduction to System Description Language
+	(59) C1.1. Principles of Extended Finite State Machines
+	(59) C1.2. SDL Symbol Definition
+(62) Appendix C2a: Simplex Physical Layer State Machines
+	(62) C2a.1. Interaction with the Link Multiplexer
+	(63) C2a.2. Interface to the Hardware
+	(63) C2a.3. Internal Operation of the Machine
+(73) Appendix C2b: Duplex Physical Layer State Machines
+	(73) C2b.1. Interaction with the Link Multiplexer
+	(74) C2b.2. Interface to the Hardware
+	(74) C2b.3. Internal Operation of the Machine
+(80) Appendix C3: Link Multiplexer State Machine
+	(80) C3.1. Interaction with the Data-Link State Machine
+	(80) C3.2. Interaction with the Physical Layer State Machine
+	(81) C3.3. Internal Operation of the Machine
+(89) Appendix C4: Data-Link State Machine
+	(89) C4.1. Interaction with the Data-Link Service Access Point
+	(90) C4.2. Interaction with the Link Multiplexer State Machine
+	(90) C4.3. Internal Operation of the Machine
+(117) Appendix C5: Management Data-Link State Machine
+	(117) C5.1. Interaction with the Data-Link Service Access Point
+	(117) C5.2. Interaction with the Link Multiplexer State Machine
+	(117) C5.3. Internal Operation of the Machine
+(127) Appendix C6: Segmenter/Reassembler
+	(127) C6.1. Segmenter State Machine
+	(127) C6.2. Reassembler State Machine
+	(128) C6.3. Internal Operation of the Machine
+		(128) C6.3.1. Internal Operation of the Segmenter State Machine
+		(128) C6.3.2. Internal Operation of the Reassembler State Machine
+	(129) C6.4. Final Observations
+(136) Appendix D: Data Link Service Access Point and Primitives
+	(136) D.1. Model of a Data-Link Connection
+	(137) D.2. Queue Model Concepts
+	(138) D.3. DLC Establishment
+	(138) D.4. Data Transfer
+	(139) D.5. DLC Release
+	(139) D.6. Relationship of Primitives at the Two DLC Endpoints
