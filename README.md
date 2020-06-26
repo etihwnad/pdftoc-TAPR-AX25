@@ -6,8 +6,10 @@ published by https://tapr.org
 
 canonical location http://www.tapr.org/pdf/AX25.2.2.pdf
 
-**Version with PDF Bookmarks:** [AX25.2.2_toc.pdf](https://github.com/etihwnad/pdftoc-TAPR-AX25/releases/download/2.2-toc1/AX25.2.2_toc.pdf)
+**Version with PDF Bookmarks:** [AX25.2.2_toc.pdf](https://github.com/etihwnad/pdftoc-TAPR-AX25/releases/download/2.2-toc1/AX25.2.2_toc.pdf)  (Provided for convenience only)
 
+
+## Background
 Unfortunately, the canonical version does not include bookmarks which make navigating to
 various sections convenient.
 This repository contains a tool for converting a specially-formatted
@@ -21,7 +23,7 @@ The bookmark input file `toc.votl` is formatted as:
 The `totoc.py` script and Makefile handle the work of fetching the source PDF,
 converting to the correct bookmark file, and merging the information.
 
-## Requirements
+## Tool Requirements
 
 * PDFtk available as `pdftk`
 * Python 3 available as `python3`
