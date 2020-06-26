@@ -6,7 +6,9 @@ published by https://tapr.org
 
 canonical location http://www.tapr.org/pdf/AX25.2.2.pdf
 
-Unfortunately, that version does not include bookmarks which make navigating to
+**Version with PDF Bookmarks:** [AX25.2.2_toc.pdf](https://github.com/etihwnad/pdftoc-TAPR-AX25/releases/download/2.2-toc1/AX25.2.2_toc.pdf)
+
+Unfortunately, the canonical version does not include bookmarks which make navigating to
 various sections convenient.
 This repository contains a tool for converting a specially-formatted
 [VimOutliner-style](https://github.com/vimoutliner/vimoutliner) file `toc.votl`
