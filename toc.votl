@@ -74,12 +74,12 @@
 			(40) 4.4.5.2. Timer T3 Recovery
 		(40) 4.4.6. Invalid Frame or FCS Error
 (41) 5. Elements for Layer-to-Layer Communication
-	(41) 5.1. Layer 3 Entity <—> Management Data-link State Machine
-	(41) 5.2. Management Data-Link State Machine <-> Link Multiplexer State Machine
-	(42) 5.3. Layer 3 Entity <—> Data-Link State Machine
-	(43) 5.4. Data-Link State Machine <—> Link Multiplexer State Machine
-	(44) 5.5. Link Multiplexer State Machine <—> Physical State Machine
-	(44) 5.6. Physical State Machine <—> Hardware
+	(41) 5.1. Layer 3 Entity -— Management Data-link State Machine
+	(41) 5.2. Management Data-Link State Machine -- Link Multiplexer State Machine
+	(42) 5.3. Layer 3 Entity -— Data-Link State Machine
+	(43) 5.4. Data-Link State Machine —- Link Multiplexer State Machine
+	(44) 5.5. Link Multiplexer State Machine -— Physical State Machine
+	(44) 5.6. Physical State Machine —- Hardware
 (45) 6. Description of AX.25 Procedures
 	(45) 6.1. Address Field Operation
 		(45) 6.1.1. Address Information
